@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "[LiteRT/locache.js] Sample-01",
+            "program": "${workspaceFolder}/src/samples/sample-01.ts",
+            "sourceMaps": true,
+            "outFiles": [
+                "${workspaceFolder}/lib/*.js",
+                "${workspaceFolder}/lib/**/*.js",
+                "${workspaceFolder}/samples/*.js",
+                "${workspaceFolder}/samples/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "[LiteRT/locache.js] Test with Mocha",
+            "sourceMaps": true,
+            "outputCapture": "std",
+            "runtimeExecutable": "npm",
+            "cwd": "${workspaceFolder}",
+            "runtimeArgs": [
+                "test"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/lib/*.js",
+                "${workspaceFolder}/lib/**/*.js",
+                "${workspaceFolder}/samples/*.js",
+                "${workspaceFolder}/samples/**/*.js",
+                "${workspaceFolder}/tests/*.js",
+                "${workspaceFolder}/tests/**/*.js"
+            ]
+        }
+    ]
+}

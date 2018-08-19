@@ -1,0 +1,39 @@
+{
+  "name": "@litert/locache",
+  "version": "0.1.0",
+  "description": "A local cache management library.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "prepare": "npm run rebuild",
+    "build": "tsc -p tsconfig.json",
+    "rebuild": "npm run clean && npm run lint && npm run build && npm test",
+    "test": "mocha ./tests",
+    "clean": "rm -rf lib samples tests",
+    "lint": "tslint -p . -c tslint.json"
+  },
+  "keywords": [
+    "litert",
+    "lrt",
+    "locache"
+  ],
+  "author": "Angus.Fenying <fenying@litert.org> (https://fenying.net)",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litert/locache.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/litert/locache.js/issues"
+  },
+  "homepage": "https://github.com/litert/locache.js#readme",
+  "types": "./lib/index.d.ts",
+  "typings": "./lib/index.d.ts",
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.7.1",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "typescript": "^2.9.2"
+  }
+}
