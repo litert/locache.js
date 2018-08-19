@@ -14,7 +14,8 @@
   "keywords": [
     "litert",
     "lrt",
-    "locache"
+    "cache",
+    "local"
   ],
   "author": "Angus.Fenying <fenying@litert.org> (https://fenying.net)",
   "license": "Apache-2.0",
